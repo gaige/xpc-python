@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65179389254D7B07005D1277 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179388254D7B07005D1277 /* AppDelegate.m */; };
+		6517938B254D7B07005D1277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6517938A254D7B07005D1277 /* Assets.xcassets */; };
+		6517938E254D7B07005D1277 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6517938C254D7B07005D1277 /* MainMenu.xib */; };
+		65179391254D7B07005D1277 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179390254D7B07005D1277 /* main.m */; };
+		6517939C254D7B07005D1277 /* PythonTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6517939B254D7B07005D1277 /* PythonTestTests.m */; };
+		651793A7254D7B07005D1277 /* PythonTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793A6254D7B07005D1277 /* PythonTestUITests.m */; };
+		651793C9254EE646005D1277 /* FormulaExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793C8254EE646005D1277 /* FormulaExecutor.m */; };
+		651793CB254EE646005D1277 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793CA254EE646005D1277 /* main.m */; };
+		651793CF254EE646005D1277 /* FormulaExecutor.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 651793C4254EE646005D1277 /* FormulaExecutor.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		651793EE254EE799005D1277 /* PyComputation.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793E7254EE798005D1277 /* PyComputation.m */; };
+		651793EF254EE799005D1277 /* PyGeometryModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793E9254EE799005D1277 /* PyGeometryModule.m */; };
+		651793F0254EE799005D1277 /* PyUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793EB254EE799005D1277 /* PyUtilities.m */; };
+		651793F1254EE799005D1277 /* PyComputationGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793ED254EE799005D1277 /* PyComputationGlobals.m */; };
+		65179401254EEB59005D1277 /* Python.framework in Resources */ = {isa = PBXBuildFile; fileRef = 651793DD254EE709005D1277 /* Python.framework */; };
+		65179414254EED0B005D1277 /* MapGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179413254EED0B005D1277 /* MapGeometry.m */; };
+		65179419254EED6F005D1277 /* MapGeometryExternalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179406254EEC5A005D1277 /* MapGeometryExternalProxy.m */; };
+		65179426254F006C005D1277 /* Python.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651793DD254EE709005D1277 /* Python.framework */; };
+		65179427254F006C005D1277 /* Python.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 651793DD254EE709005D1277 /* Python.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		656E3D10254F0C2B0043FB21 /* FormulaExecutableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E3D0F254F0C2B0043FB21 /* FormulaExecutableTests.m */; };
+		656E3D21254F16470043FB21 /* Python.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 651793DD254EE709005D1277 /* Python.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		656E3D26254F16680043FB21 /* FormulaExecutor.xpc in CopyFiles */ = {isa = PBXBuildFile; fileRef = 651793C4254EE646005D1277 /* FormulaExecutor.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		656E3D36254F1CF70043FB21 /* PyComputationGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 651793ED254EE799005D1277 /* PyComputationGlobals.m */; };
+		656E3D3A254F1D640043FB21 /* MapGeometryExternalProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179406254EEC5A005D1277 /* MapGeometryExternalProxy.m */; };
+		656E3D3E254F1D690043FB21 /* MapGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 65179413254EED0B005D1277 /* MapGeometry.m */; };
+		656E3D44254F27E60043FB21 /* FormulaExecutorProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E3D43254F27E50043FB21 /* FormulaExecutorProxy.m */; };
+		65C5804B254F335800579B49 /* FormulaTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C5804A254F335800579B49 /* FormulaTestViewController.m */; };
+		65C58056254F348000579B49 /* FormulaExecutorProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 656E3D43254F27E50043FB21 /* FormulaExecutorProxy.m */; };
+		65C5805C254F428F00579B49 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 65C5805B254F428F00579B49 /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65179398254D7B07005D1277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6517937C254D7B07005D1277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65179383254D7B07005D1277;
+			remoteInfo = PythonTest;
+		};
+		651793A3254D7B07005D1277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6517937C254D7B07005D1277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65179383254D7B07005D1277;
+			remoteInfo = PythonTest;
+		};
+		651793CD254EE646005D1277 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6517937C254D7B07005D1277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651793C3254EE646005D1277;
+			remoteInfo = FormulaExecutor;
+		};
+		656E3D19254F0C550043FB21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6517937C254D7B07005D1277 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 651793C3254EE646005D1277;
+			remoteInfo = FormulaExecutor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		651793D3254EE646005D1277 /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				651793CF254EE646005D1277 /* FormulaExecutor.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65179428254F006C005D1277 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65179427254F006C005D1277 /* Python.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656E3D20254F16380043FB21 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				656E3D21254F16470043FB21 /* Python.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656E3D25254F16580043FB21 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				656E3D26254F16680043FB21 /* FormulaExecutor.xpc in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		65179384254D7B07005D1277 /* PythonTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65179387254D7B07005D1277 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		65179388254D7B07005D1277 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6517938A254D7B07005D1277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6517938D254D7B07005D1277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		6517938F254D7B07005D1277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65179390254D7B07005D1277 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		65179392254D7B07005D1277 /* PythonTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PythonTest.entitlements; sourceTree = "<group>"; };
+		65179397254D7B07005D1277 /* PythonTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6517939B254D7B07005D1277 /* PythonTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonTestTests.m; sourceTree = "<group>"; };
+		6517939D254D7B07005D1277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651793A2254D7B07005D1277 /* PythonTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		651793A6254D7B07005D1277 /* PythonTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PythonTestUITests.m; sourceTree = "<group>"; };
+		651793A8254D7B07005D1277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651793C4254EE646005D1277 /* FormulaExecutor.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = FormulaExecutor.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		651793C6254EE646005D1277 /* FormulaExecutorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaExecutorProtocol.h; sourceTree = "<group>"; };
+		651793C7254EE646005D1277 /* FormulaExecutor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaExecutor.h; sourceTree = "<group>"; };
+		651793C8254EE646005D1277 /* FormulaExecutor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaExecutor.m; sourceTree = "<group>"; };
+		651793CA254EE646005D1277 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		651793CC254EE646005D1277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		651793D8254EE671005D1277 /* FormulaExecutor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FormulaExecutor.entitlements; sourceTree = "<group>"; };
+		651793DD254EE709005D1277 /* Python.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Python.framework; path = FormulaExecutor/Python.framework; sourceTree = SOURCE_ROOT; };
+		651793E7254EE798005D1277 /* PyComputation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyComputation.m; sourceTree = "<group>"; };
+		651793E8254EE799005D1277 /* PyGeometryModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyGeometryModule.h; sourceTree = "<group>"; };
+		651793E9254EE799005D1277 /* PyGeometryModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyGeometryModule.m; sourceTree = "<group>"; };
+		651793EA254EE799005D1277 /* PyComputation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyComputation.h; sourceTree = "<group>"; };
+		651793EB254EE799005D1277 /* PyUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyUtilities.m; sourceTree = "<group>"; };
+		651793EC254EE799005D1277 /* PyUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PyUtilities.h; sourceTree = "<group>"; };
+		651793ED254EE799005D1277 /* PyComputationGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PyComputationGlobals.m; sourceTree = "<group>"; };
+		65179406254EEC5A005D1277 /* MapGeometryExternalProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapGeometryExternalProxy.m; sourceTree = "<group>"; };
+		65179407254EEC5A005D1277 /* MapGeometryExternalProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGeometryExternalProxy.h; sourceTree = "<group>"; };
+		6517940D254EEC91005D1277 /* MapGeometryExternalProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapGeometryExternalProtocol.h; sourceTree = "<group>"; };
+		65179412254EED0B005D1277 /* MapGeometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapGeometry.h; sourceTree = "<group>"; };
+		65179413254EED0B005D1277 /* MapGeometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapGeometry.m; sourceTree = "<group>"; };
+		6517942C254F00D9005D1277 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		656E3D0D254F0C2B0043FB21 /* FormulaExecutableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FormulaExecutableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656E3D0F254F0C2B0043FB21 /* FormulaExecutableTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaExecutableTests.m; sourceTree = "<group>"; };
+		656E3D11254F0C2B0043FB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656E3D42254F27E50043FB21 /* FormulaExecutorProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormulaExecutorProxy.h; path = PythonTest/FormulaExecutorProxy.h; sourceTree = SOURCE_ROOT; };
+		656E3D43254F27E50043FB21 /* FormulaExecutorProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormulaExecutorProxy.m; path = PythonTest/FormulaExecutorProxy.m; sourceTree = SOURCE_ROOT; };
+		65C58049254F335800579B49 /* FormulaTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FormulaTestViewController.h; sourceTree = "<group>"; };
+		65C5804A254F335800579B49 /* FormulaTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FormulaTestViewController.m; sourceTree = "<group>"; };
+		65C5805B254F428F00579B49 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65179381254D7B07005D1277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65179394254D7B07005D1277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6517939F254D7B07005D1277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651793C1254EE646005D1277 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65179426254F006C005D1277 /* Python.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656E3D0A254F0C2B0043FB21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6517937B254D7B07005D1277 = {
+			isa = PBXGroup;
+			children = (
+				65C5805B254F428F00579B49 /* LICENSE */,
+				6517942C254F00D9005D1277 /* README.md */,
+				65179386254D7B07005D1277 /* PythonTest */,
+				6517939A254D7B07005D1277 /* PythonTestTests */,
+				651793A5254D7B07005D1277 /* PythonTestUITests */,
+				651793C5254EE646005D1277 /* FormulaExecutor */,
+				656E3D0E254F0C2B0043FB21 /* FormulaExecutableTests */,
+				65179385254D7B07005D1277 /* Products */,
+				651793FA254EEB44005D1277 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		65179385254D7B07005D1277 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65179384254D7B07005D1277 /* PythonTest.app */,
+				65179397254D7B07005D1277 /* PythonTestTests.xctest */,
+				651793A2254D7B07005D1277 /* PythonTestUITests.xctest */,
+				651793C4254EE646005D1277 /* FormulaExecutor.xpc */,
+				656E3D0D254F0C2B0043FB21 /* FormulaExecutableTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65179386254D7B07005D1277 /* PythonTest */ = {
+			isa = PBXGroup;
+			children = (
+				6517940D254EEC91005D1277 /* MapGeometryExternalProtocol.h */,
+				65179407254EEC5A005D1277 /* MapGeometryExternalProxy.h */,
+				65179406254EEC5A005D1277 /* MapGeometryExternalProxy.m */,
+				65179387254D7B07005D1277 /* AppDelegate.h */,
+				65179388254D7B07005D1277 /* AppDelegate.m */,
+				6517938A254D7B07005D1277 /* Assets.xcassets */,
+				6517938C254D7B07005D1277 /* MainMenu.xib */,
+				6517938F254D7B07005D1277 /* Info.plist */,
+				65179390254D7B07005D1277 /* main.m */,
+				65179392254D7B07005D1277 /* PythonTest.entitlements */,
+				65179412254EED0B005D1277 /* MapGeometry.h */,
+				65179413254EED0B005D1277 /* MapGeometry.m */,
+				65C58049254F335800579B49 /* FormulaTestViewController.h */,
+				65C5804A254F335800579B49 /* FormulaTestViewController.m */,
+			);
+			path = PythonTest;
+			sourceTree = "<group>";
+		};
+		6517939A254D7B07005D1277 /* PythonTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				6517939B254D7B07005D1277 /* PythonTestTests.m */,
+				6517939D254D7B07005D1277 /* Info.plist */,
+			);
+			path = PythonTestTests;
+			sourceTree = "<group>";
+		};
+		651793A5254D7B07005D1277 /* PythonTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				651793A6254D7B07005D1277 /* PythonTestUITests.m */,
+				651793A8254D7B07005D1277 /* Info.plist */,
+			);
+			path = PythonTestUITests;
+			sourceTree = "<group>";
+		};
+		651793C5254EE646005D1277 /* FormulaExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				651793EA254EE799005D1277 /* PyComputation.h */,
+				651793E7254EE798005D1277 /* PyComputation.m */,
+				651793ED254EE799005D1277 /* PyComputationGlobals.m */,
+				651793E8254EE799005D1277 /* PyGeometryModule.h */,
+				651793E9254EE799005D1277 /* PyGeometryModule.m */,
+				651793EC254EE799005D1277 /* PyUtilities.h */,
+				651793EB254EE799005D1277 /* PyUtilities.m */,
+				651793DD254EE709005D1277 /* Python.framework */,
+				651793D8254EE671005D1277 /* FormulaExecutor.entitlements */,
+				651793C6254EE646005D1277 /* FormulaExecutorProtocol.h */,
+				651793C7254EE646005D1277 /* FormulaExecutor.h */,
+				651793C8254EE646005D1277 /* FormulaExecutor.m */,
+				651793CA254EE646005D1277 /* main.m */,
+				651793CC254EE646005D1277 /* Info.plist */,
+			);
+			path = FormulaExecutor;
+			sourceTree = "<group>";
+		};
+		651793FA254EEB44005D1277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		656E3D0E254F0C2B0043FB21 /* FormulaExecutableTests */ = {
+			isa = PBXGroup;
+			children = (
+				656E3D42254F27E50043FB21 /* FormulaExecutorProxy.h */,
+				656E3D43254F27E50043FB21 /* FormulaExecutorProxy.m */,
+				656E3D0F254F0C2B0043FB21 /* FormulaExecutableTests.m */,
+				656E3D11254F0C2B0043FB21 /* Info.plist */,
+			);
+			path = FormulaExecutableTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65179383254D7B07005D1277 /* PythonTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651793AB254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTest" */;
+			buildPhases = (
+				65179380254D7B07005D1277 /* Sources */,
+				65179381254D7B07005D1277 /* Frameworks */,
+				65179382254D7B07005D1277 /* Resources */,
+				651793D3254EE646005D1277 /* Embed XPC Services */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651793CE254EE646005D1277 /* PBXTargetDependency */,
+			);
+			name = PythonTest;
+			productName = PythonTest;
+			productReference = 65179384254D7B07005D1277 /* PythonTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65179396254D7B07005D1277 /* PythonTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651793AE254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTestTests" */;
+			buildPhases = (
+				65179393254D7B07005D1277 /* Sources */,
+				65179394254D7B07005D1277 /* Frameworks */,
+				65179395254D7B07005D1277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65179399254D7B07005D1277 /* PBXTargetDependency */,
+			);
+			name = PythonTestTests;
+			productName = PythonTestTests;
+			productReference = 65179397254D7B07005D1277 /* PythonTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		651793A1254D7B07005D1277 /* PythonTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651793B1254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTestUITests" */;
+			buildPhases = (
+				6517939E254D7B07005D1277 /* Sources */,
+				6517939F254D7B07005D1277 /* Frameworks */,
+				651793A0254D7B07005D1277 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				651793A4254D7B07005D1277 /* PBXTargetDependency */,
+			);
+			name = PythonTestUITests;
+			productName = PythonTestUITests;
+			productReference = 651793A2254D7B07005D1277 /* PythonTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		651793C3254EE646005D1277 /* FormulaExecutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 651793D0254EE646005D1277 /* Build configuration list for PBXNativeTarget "FormulaExecutor" */;
+			buildPhases = (
+				651793C0254EE646005D1277 /* Sources */,
+				651793C1254EE646005D1277 /* Frameworks */,
+				651793C2254EE646005D1277 /* Resources */,
+				65179428254F006C005D1277 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FormulaExecutor;
+			productName = FormulaExecutor;
+			productReference = 651793C4254EE646005D1277 /* FormulaExecutor.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		656E3D0C254F0C2B0043FB21 /* FormulaExecutableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656E3D14254F0C2B0043FB21 /* Build configuration list for PBXNativeTarget "FormulaExecutableTests" */;
+			buildPhases = (
+				656E3D09254F0C2B0043FB21 /* Sources */,
+				656E3D0A254F0C2B0043FB21 /* Frameworks */,
+				656E3D0B254F0C2B0043FB21 /* Resources */,
+				656E3D20254F16380043FB21 /* Copy Frameworks */,
+				656E3D25254F16580043FB21 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656E3D1A254F0C550043FB21 /* PBXTargetDependency */,
+			);
+			name = FormulaExecutableTests;
+			productName = FormulaExecutableTests;
+			productReference = 656E3D0D254F0C2B0043FB21 /* FormulaExecutableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6517937C254D7B07005D1277 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					65179383254D7B07005D1277 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					65179396254D7B07005D1277 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 65179383254D7B07005D1277;
+					};
+					651793A1254D7B07005D1277 = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 65179383254D7B07005D1277;
+					};
+					651793C3254EE646005D1277 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					656E3D0C254F0C2B0043FB21 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 6517937F254D7B07005D1277 /* Build configuration list for PBXProject "PythonTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6517937B254D7B07005D1277;
+			productRefGroup = 65179385254D7B07005D1277 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65179383254D7B07005D1277 /* PythonTest */,
+				65179396254D7B07005D1277 /* PythonTestTests */,
+				651793A1254D7B07005D1277 /* PythonTestUITests */,
+				651793C3254EE646005D1277 /* FormulaExecutor */,
+				656E3D0C254F0C2B0043FB21 /* FormulaExecutableTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65179382254D7B07005D1277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C5805C254F428F00579B49 /* LICENSE in Resources */,
+				6517938B254D7B07005D1277 /* Assets.xcassets in Resources */,
+				6517938E254D7B07005D1277 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65179395254D7B07005D1277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651793A0254D7B07005D1277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651793C2254EE646005D1277 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65179401254EEB59005D1277 /* Python.framework in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656E3D0B254F0C2B0043FB21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65179380254D7B07005D1277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65C58056254F348000579B49 /* FormulaExecutorProxy.m in Sources */,
+				65179419254EED6F005D1277 /* MapGeometryExternalProxy.m in Sources */,
+				65179391254D7B07005D1277 /* main.m in Sources */,
+				65C5804B254F335800579B49 /* FormulaTestViewController.m in Sources */,
+				65179389254D7B07005D1277 /* AppDelegate.m in Sources */,
+				65179414254EED0B005D1277 /* MapGeometry.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65179393254D7B07005D1277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6517939C254D7B07005D1277 /* PythonTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6517939E254D7B07005D1277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651793A7254D7B07005D1277 /* PythonTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651793C0254EE646005D1277 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651793EF254EE799005D1277 /* PyGeometryModule.m in Sources */,
+				651793F1254EE799005D1277 /* PyComputationGlobals.m in Sources */,
+				651793CB254EE646005D1277 /* main.m in Sources */,
+				651793F0254EE799005D1277 /* PyUtilities.m in Sources */,
+				651793EE254EE799005D1277 /* PyComputation.m in Sources */,
+				651793C9254EE646005D1277 /* FormulaExecutor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656E3D09254F0C2B0043FB21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656E3D3A254F1D640043FB21 /* MapGeometryExternalProxy.m in Sources */,
+				656E3D10254F0C2B0043FB21 /* FormulaExecutableTests.m in Sources */,
+				656E3D44254F27E60043FB21 /* FormulaExecutorProxy.m in Sources */,
+				656E3D3E254F1D690043FB21 /* MapGeometry.m in Sources */,
+				656E3D36254F1CF70043FB21 /* PyComputationGlobals.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65179399254D7B07005D1277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65179383254D7B07005D1277 /* PythonTest */;
+			targetProxy = 65179398254D7B07005D1277 /* PBXContainerItemProxy */;
+		};
+		651793A4254D7B07005D1277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65179383254D7B07005D1277 /* PythonTest */;
+			targetProxy = 651793A3254D7B07005D1277 /* PBXContainerItemProxy */;
+		};
+		651793CE254EE646005D1277 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651793C3254EE646005D1277 /* FormulaExecutor */;
+			targetProxy = 651793CD254EE646005D1277 /* PBXContainerItemProxy */;
+		};
+		656E3D1A254F0C550043FB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 651793C3254EE646005D1277 /* FormulaExecutor */;
+			targetProxy = 656E3D19254F0C550043FB21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6517938C254D7B07005D1277 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6517938D254D7B07005D1277 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		651793A9254D7B07005D1277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		651793AA254D7B07005D1277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		651793AC254D7B07005D1277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PythonTest/PythonTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PythonTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		651793AD254D7B07005D1277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PythonTest/PythonTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PythonTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		651793AF254D7B07005D1277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				INFOPLIST_FILE = PythonTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PythonTest.app/Contents/MacOS/PythonTest";
+			};
+			name = Debug;
+		};
+		651793B0254D7B07005D1277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				INFOPLIST_FILE = PythonTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PythonTest.app/Contents/MacOS/PythonTest";
+			};
+			name = Release;
+		};
+		651793B2254D7B07005D1277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				INFOPLIST_FILE = PythonTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PythonTest;
+			};
+			name = Debug;
+		};
+		651793B3254D7B07005D1277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				INFOPLIST_FILE = PythonTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.PythonTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PythonTest;
+			};
+			name = Release;
+		};
+		651793D1254EE646005D1277 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = FormulaExecutor/FormulaExecutor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FormulaExecutor",
+				);
+				INFOPLIST_FILE = FormulaExecutor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.FormulaExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		651793D2254EE646005D1277 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_ENTITLEMENTS = FormulaExecutor/FormulaExecutor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = F26W2ZR2V5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/FormulaExecutor",
+				);
+				INFOPLIST_FILE = FormulaExecutor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@loader_path/../Frameworks",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.FormulaExecutor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		656E3D12254F0C2B0043FB21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FormulaExecutableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.FormulaExecutableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		656E3D13254F0C2B0043FB21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = FormulaExecutableTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ClueTrust.Example.FormulaExecutableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6517937F254D7B07005D1277 /* Build configuration list for PBXProject "PythonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651793A9254D7B07005D1277 /* Debug */,
+				651793AA254D7B07005D1277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651793AB254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651793AC254D7B07005D1277 /* Debug */,
+				651793AD254D7B07005D1277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651793AE254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651793AF254D7B07005D1277 /* Debug */,
+				651793B0254D7B07005D1277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651793B1254D7B07005D1277 /* Build configuration list for PBXNativeTarget "PythonTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651793B2254D7B07005D1277 /* Debug */,
+				651793B3254D7B07005D1277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		651793D0254EE646005D1277 /* Build configuration list for PBXNativeTarget "FormulaExecutor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				651793D1254EE646005D1277 /* Debug */,
+				651793D2254EE646005D1277 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656E3D14254F0C2B0043FB21 /* Build configuration list for PBXNativeTarget "FormulaExecutableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656E3D12254F0C2B0043FB21 /* Debug */,
+				656E3D13254F0C2B0043FB21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6517937C254D7B07005D1277 /* Project object */;
+}
